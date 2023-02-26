@@ -1,6 +1,7 @@
 import React from 'react'
 import './../styles/Home.css'
 import { Link } from 'react-router-dom'
+
 export const Home = () => {
   return (
     <div>
@@ -37,11 +38,11 @@ export const Home = () => {
                 </div>
             </div>
             <div class='home-start-btn-div'>
-                <span><Link to="/catagories">Start Game!</Link></span>
+                <span><Link to="/categories">Start asdfGame</Link></span>
             </div>
         </div>
         <div class='about us'>
-            <div>about us</div>
+            
         </div>
     </div>
   )

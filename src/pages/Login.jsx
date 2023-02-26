@@ -3,7 +3,7 @@ import "./../styles/loginPage.css"
 import { Link } from 'react-router-dom'
 import Name from '../title/Name'
 
-export const login = () => {
+export const Login = () => {
   return (
     <div class='login-pg'>
         <div class='login-title-div'>
@@ -25,4 +25,4 @@ export const login = () => {
   )
 }
 
-export default login 
+export default Login 

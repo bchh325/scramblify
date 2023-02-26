@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const game = () => {
+export const Game = () => {
   return (
     <div class='game-pg'>
         <div class='score-div'>
@@ -23,4 +23,4 @@ const game = () => {
   )
 }
 
-export default game
+export default Game
