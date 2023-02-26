@@ -2,15 +2,33 @@ li{
     display: inline-block;
     margin-right: 80px;
 }
+nav span:hover{
+    color:rgb(54, 209, 82);
+    border-bottom: solid 3px;
+    border-color: rgb(54, 209, 82);
+    border-radius: 3px;
+    
+}
 a{
     text-decoration: none;
     color: antiquewhite;
+}
+nav a:hover{
+    color:rgb(54, 209, 82);
+    border-bottom: solid 3px;
+    border-color: rgb(54, 209, 82);
+    border-radius: 3px;
 }
 nav ul li{
     padding: 0 30px;
     bottom: 0;
 }
+nav ul li:hover{
+    color:rgb(54, 209, 82);
+    border-bottom: 4px;
+    border-color: rgb(54, 209, 82);
+}
 nav{
     position:relative;
-    top: 550px;
+    top: 700px;
 }
