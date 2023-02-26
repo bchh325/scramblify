@@ -2,6 +2,7 @@ li{
     display: inline-block;
     margin-right: 80px;
     color: antiquewhite;
+    font-size: 22px;
 }
 nav span:hover{
     color:rgb(136, 207, 127);

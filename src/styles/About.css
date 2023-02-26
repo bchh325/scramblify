@@ -1,0 +1,32 @@
+.About{
+    background-color: rgb(24, 25, 36); 
+}
+.pan{
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    grid-template-rows: 1fr 10fr;
+}
+.x{
+    font-family: 'Tilt Warp', cursive;
+    padding: 20px;
+    font-size: 30px;
+    color: antiquewhite;
+
+}
+.y{
+    background-color: rgb(24, 25, 36); 
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.z{
+}
+.z img{
+    padding: 30px;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+}

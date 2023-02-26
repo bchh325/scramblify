@@ -1,9 +1,9 @@
 .login-pg {
-    background-color: rgb(24, 25, 36);
+    background-color: rgb(24, 25, 36);   
     color: rgb(255, 253, 226);
     padding: 10px;
 }
-button{
+.login-btn{
     background-color:  rgb(24, 25, 36);
     color: rgb(255, 255, 255);
     border: 2px solid #4CAF50;

@@ -9,6 +9,7 @@ import Playlists from './pages/Playlists';
 import Score from './pages/Score';
 import Board from './pages/Board';
 import Flex from './pages/Flex';
+import About from './pages/About';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/score" element={<Score/>}/>
         <Route path="/test" element={<Board />}/>
         <Route path="/flex" element={<Flex/>}/>
+        <Route path="/about" element={<About/>}/>
 
       </Routes>
     </div>
