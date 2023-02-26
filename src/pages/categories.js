@@ -24,6 +24,7 @@ const categories = () => {
 
   useEffect(() => {
     GetUserPlaylist(user.token)
+    user[listOfPlaylist] = {listOfPlaylist}
   })
 
   return (
