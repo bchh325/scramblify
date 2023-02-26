@@ -1,6 +1,5 @@
 import React from 'react'
 import './../styles/Home.css'
-import { Link } from 'react-router-dom'
 export const Home = () => {
   return (
     <div>
@@ -37,10 +36,7 @@ export const Home = () => {
                 </div>
             </div>
             <div class='home-start-btn-div'>
-                <a href='https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png'/>
-                <span>
-                    <Link to="/catagories">Start Game!</Link>
-                </span>
+                <span><Link to="/catagories">Start Game!</Link></span>
             </div>
         </div>
         <div class='about us'>
