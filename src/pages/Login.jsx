@@ -24,7 +24,7 @@ export const Login = () => {
         console.log(data)
         console.log(data.data)
         window.location.replace(data.data)
-      })r
+      })
       .catch(err => {
         console.log(err)
       })
