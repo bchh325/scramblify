@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <UserContext.Provider value={{ userObj, setUserObj}}>
+      <UserContext.Provider value={{ userObj, setUserObj }}>
         <Routes>
           <Route path="/" element={<Login />}/>
           <Route path="/home" element={<Home />}/>
