@@ -32,14 +32,15 @@ h2 span{
   display: grid;
   align-items: center;
   font-size: 50px;
-  animation-delay: 2s;
-  animation: shuffle steps(10) 2s infinite ;
-  animation-iteration-count: 1;
+  
+  animation: shuffle steps(10) 1.5s infinite ;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
 }
 
 h2:hover span{
-  animation-delay: 2s;
-  animation: shuffle steps(10) 2s infinite ;
+  animation: shuffle steps(10) 1.5s infinite ;
+  animation-delay: 0.5s;
 }
 @keyframes shuffle{
   0%{
