@@ -9,9 +9,7 @@ export const login = () => {
             <h1 class='login-title'>Scramblify</h1>
         </div>
         <div class='login-btn-div'>
-          <br />
-          <br />
-            <button class='login-btn button buttonspot'><Link to="/home">Login with Spotify</Link></button>
+            <button class='login-btn'><Link to="/home">Login with Spotify</Link></button>
             <p class='login-btn-caption'>This will redirect you to the Spotify Auth Page</p>
         </div>
     </div>

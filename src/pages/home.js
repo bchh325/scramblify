@@ -35,15 +35,8 @@ export const Home = () => {
                     
                 </div>
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <div class='home-start-btn-div'>
-                <button class = "button button2">Start Game!</button>
+                <button>Start Game!</button>
             </div>
         </div>
         <div class='about us'>
