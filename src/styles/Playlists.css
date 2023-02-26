@@ -1,0 +1,12 @@
+.playlists{
+    display:grid;
+    row-gap:50px;
+    column-gap: 50px;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+.pl-title{
+    color: aliceblue;
+    padding: 50px;
+    font-size: 50px;
+}

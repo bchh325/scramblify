@@ -1,0 +1,52 @@
+.About{
+    background-color: rgb(24, 25, 36); 
+}
+.pan{
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    grid-template-rows: 1fr 10fr;
+}
+.x p{
+    font-family: 'Tilt Warp', cursive;
+    padding: 30px;
+    font-size: 45px;
+    color: antiquewhite;
+
+}
+.x span{
+    position:absolute;
+    right:80px;
+    top: 80px;
+    font-size: 30px;
+}
+.x span:hover{
+    color:rgb(136, 207, 127);
+    border-bottom: solid 3px;
+    border-color: rgb(136, 207, 127);
+    border-radius: 3px;
+}
+.y{
+    background-color: rgb(24, 25, 36); 
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.z h1{
+    font-family: 'Prompt', sans-serif;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.z p{
+    font-family: 'Prompt', sans-serif;
+    color: rgb(194, 183, 170);
+    font-size: 17px;
+}
+.z img{
+    padding: 10px;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+}

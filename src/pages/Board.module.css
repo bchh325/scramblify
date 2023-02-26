@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.container {
+    font-family: 'Poppins', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace, sans-serif;
+    background-color: white;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.container span {
+    border: 0px solid red;
+}
+
+.child {
+    border: 0px solid red;
+}
+
+.gameContainer {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    max-height: 100vh;
+}
+
+.trackContainer {
+    box-sizing: border-box;
+    display: flex;
+    max-height: 100vh;
+}
+
+.gridContainer {
+    padding: 40px;
+    overflow: scroll;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgb(24, 25, 36);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    ;
+    align-items: center;
+    justify-items: center;
+    row-gap: 20px;
+    max-height: 100%;
+}
+
+.trackContainer {
+    padding: 40px;
+    overflow: scroll;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgb(24, 25, 36);
+    display: flex;
+    flex-direction: column
+    ;
+    row-gap: 20px;
+    max-height: 100%;
+}
+
+.gridContainer span {
+    box-sizing: border-box;
+
+}
+
+.flexContainer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}
+
+.navContainer {
+    font-size: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.navContainer span {
+    -webkit-transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    -moz-transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    -o-transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    margin-right: 10px;
+}
+
+.navContainer span:hover {
+    cursor: pointer;
+    transform: translateX(10px);
+    padding: 0px 20px;
+    border-right: 1px solid green;
+}
+
+.gridContainer img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+

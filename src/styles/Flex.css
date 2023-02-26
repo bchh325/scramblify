@@ -1,0 +1,32 @@
+.grid {
+    display: grid;
+    background-color: green;
+    height: 100vh;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    /* background-color: aquamarine; */
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: 2fr 5fr;
+
+  }
+.a{
+    /* grid-column-start: start;
+    grid-column-end: 3;
+    grid-row-start: start;
+    grid-row-end: end; */
+    grid-template-rows: 2fr 5fr;
+    background-color: blue;
+}
+.ab{
+    display: grid;
+    background-color: rgb(94, 255, 94);
+    background-color: rgb(69, 69, 255);
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    grid-template-rows: 3fr 10fr;
+}
+.b{
+    background-color:aqua
+}

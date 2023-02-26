@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const score = () => {
+const Score = () => {
   return (
     <div class='score-pg'>
         <div class='your-score-div'>
@@ -11,9 +12,9 @@ const score = () => {
             <h1>Previous Score</h1>
             <p>xxx</p>
         </div>
-        <button class='play-again-btn'>Play Again?</button>
+        <button class='play-again-btn'><Link to="/home">Play Again?</Link></button>
     </div>
   )
 }
 
-export default score
+export default Score
