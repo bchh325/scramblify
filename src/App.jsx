@@ -5,8 +5,8 @@ import { UserContext } from './context/UserContext';
 import { useState } from 'react';
 import axios from 'axios';
 import Login from './pages/Login';
-import Home from './pages/Home';
-import Game from './pages/Game';
+import Home from './pages/home';
+import Game from './pages/game';
 
 function App() {
   const client_id = "d559adf71389493dbd4b84821189173a";
