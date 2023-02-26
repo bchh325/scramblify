@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tilt+Warp&display=swap');
 
 body {
   margin: 0;
@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  font-family: 'Pacifico', cursive;
+  font-family: 'Tilt Warp', cursive;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -32,9 +32,14 @@ h2 span{
   display: grid;
   align-items: center;
   font-size: 50px;
+  animation-delay: 2s;
+  animation: shuffle steps(10) 2s infinite ;
+  animation-iteration-count: 1;
 }
-h2 span{
-    animation: shuffle steps(10) 2s infinite
+
+h2:hover span{
+  animation-delay: 2s;
+  animation: shuffle steps(10) 2s infinite ;
 }
 @keyframes shuffle{
   0%{
