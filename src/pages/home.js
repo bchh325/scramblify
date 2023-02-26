@@ -37,7 +37,7 @@ export const Home = () => {
                 </div>
             </div>
             <div class='home-start-btn-div'>
-                <button><Link to="/catagories">Start Game!</Link></button>
+                <span><Link to="/catagories">Start Game!</Link></span>
             </div>
         </div>
         <div class='about us'>
