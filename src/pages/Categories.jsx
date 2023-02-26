@@ -14,13 +14,13 @@ export const Categories = () => {
         </div>
         <div class='categories-selection-div'>
             <div class='artist-name-category'>
-            <h1>Guess the Artist Names!</h1>
+            <h1><Link to="/playlists">Guess the Artist Names!</Link></h1>
             </div>
             <div class='song-name-category'>
-            <h1>Guess the Song Names!</h1>
+            <h1><Link to="/playlists">Guess the Song Names!</Link></h1>
             </div>
             <div class='album-name-category'>
-            <h1>Guess the Album Names!</h1>
+            <h1><Link to="/playlists">Guess the Album Names!</Link></h1>
             </div>
         </div>
     </div>

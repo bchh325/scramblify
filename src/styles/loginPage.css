@@ -1,7 +1,6 @@
 .login-pg {
     background-color: rgb(24, 25, 36);
     color: rgb(255, 253, 226);
-    height: 100vh;
     padding: 100px;
 }
 button{
@@ -12,7 +11,7 @@ button{
     border-radius: 40px;
     padding: 2px;
 }
-a {
+.login-a {
     text-decoration: none;
     color: #5fc563;
     padding: 20px;
@@ -20,15 +19,17 @@ a {
     position: relative;
     top: 14px;
 }
-a:hover{
+.login-a:hover{
     color: #376139;
 }
 .spot{
+    position: relative;
     height: 30px;
     width: 30px;
     padding: 10px;
     float: left;
     display:inline;
+    left:10px;
 }
 .login-btn-div{
     display:flex;

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './../title/Name.css'
+
 export default function Name() {
   return (
     <div>

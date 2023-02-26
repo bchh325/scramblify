@@ -16,7 +16,7 @@ export const Game = () => {
             <input type='text'></input>
         </div>
         <div class='submit-hint-btn-div'>
-            <button class='submit-btn'>Submit!</button>
+            <button class='submit-btn'><Link to="/score">Submit!</Link></button>
             <button class='hint-btn'>Hint?</button>
         </div>
     </div>

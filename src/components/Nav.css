@@ -1,0 +1,16 @@
+li{
+    display: inline-block;
+    margin-right: 80px;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+nav ul li{
+    padding: 0 30px;
+    bottom: 0;
+}
+nav{
+    position:relative;
+    top: 550px;
+}

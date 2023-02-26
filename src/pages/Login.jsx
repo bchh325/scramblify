@@ -2,10 +2,12 @@ import React from 'react'
 import "./../styles/loginPage.css" 
 import { Link } from 'react-router-dom'
 import Name from '../title/Name'
+import Nav from '../components/Nav'
 
 export const Login = () => {
   return (
     <div class='login-pg'>
+        <Nav />
         <div class='login-title-div'>
             {/* <h1 class='login-title'>Scramblify</h1> */}
             <Name />
@@ -13,7 +15,7 @@ export const Login = () => {
         <div class='login-btn-div'>
             <button class='login-btn'>
             <img class='spot'src='https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png'/>
-              <Link to="/home">Login with Spotify</Link>
+              <Link class='login-a' to="/home">Login with Spotify</Link>
             </button>
             
         </div >
