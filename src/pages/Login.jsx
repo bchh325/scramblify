@@ -11,7 +11,7 @@ import QueryString from 'qs'
 export const Login = () => {
   const handleLogin = () => {
     console.log("clicked")
-    const url = "https://scram-back.wl.r.appspot.com/authorize"
+    const url = "http://localhost:8888/authorize"
 
     const options = {
       method: 'get',

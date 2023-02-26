@@ -6,11 +6,11 @@
 }
 
 .container span {
-    border: 2px solid red;
+    border: 0px solid red;
 }
 
 .child {
-    border: 2px solid red;
+    border: 0px solid red;
 }
 
 .gameContainer {
@@ -21,7 +21,7 @@
 }
 
 .gridContainer {
-    padding-top: 20px;
+    padding: 40px;
     overflow: scroll;
     box-sizing: border-box;
     height: 90vh;
@@ -49,6 +49,7 @@
 }
 
 .navContainer {
+    font-size: 25px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -58,33 +59,18 @@
 }
 
 .navContainer span {
-    font-size: 25px;
-    width: fit-content;
-    -webkit-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
-    -moz-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
-    -o-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
-    transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    -moz-transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    -o-transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    transition: transform 0.4s cubic-bezier(0.5, 0.25, 0, 1);
+    margin-right: 10px;
 }
 
 .navContainer span:hover {
     cursor: pointer;
-    background-color: green;
-    transform: translateX(15px);
-}
-
-.navContainer span:focus {
-    transform: translateX(15px);
-}
-
-.gridContainer span {
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    -webkit-transition: transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
-    -moz-transition: transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
-    -o-transition: transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
-    transition: transform 0.2s cubic-bezier(0.5, 0.25, 0, 1);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: translateX(10px);
+    padding: 0px 20px;
+    border-right: 1px solid green;
 }
 
 .gridContainer img {
@@ -92,7 +78,5 @@
     max-height: 100%;
 }
 
-.gridContainer span:hover {
-    border: 2px solid green;
-    transform: scale(1.08);
-}
+
+

@@ -4,13 +4,14 @@ import "./../styles/loginPage.css"
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import QueryString from 'qs'
+import Item from './Item'
 
 export default function Board() {
     const [playlists, setPlaylists] = useState(null)
 
     const getPlaylists = () => {
         console.log("tokens done")
-        const url = "https://scram-back.wl.r.appspot.com/resources"
+        const url = "http://localhost:8888/resources"
 
         const options = {
             method: 'post',
@@ -43,7 +44,7 @@ export default function Board() {
         console.log(params)
         if (params["?code"] && params.state) {
             console.log("exists")
-            const url = "https://scram-back.wl.r.appspot.com/exchange"
+            const url = "http://localhost:8888/exchange"
             options = {
                 method: 'post',
                 url: url,
@@ -87,11 +88,8 @@ export default function Board() {
                 <div className={`${styles.gridContainer} ${styles.child}`}>
                     {playlists && playlists.items.map((item, i) => {
                         console.log(item.images[0].url)
-
-                        return (
-                            <span>
-                                <img src={`${item.images[0].url}`}/>
-                            </span>)
+                        console.log(item)
+                        return (<Item info={item} image={`${item.images[0].url}`}/>)
                     })}
                 </div>
             </div>
