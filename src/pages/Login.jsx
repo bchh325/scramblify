@@ -10,6 +10,7 @@ import QueryString from 'qs'
 
 export const Login = () => {
   const handleLogin = () => {
+    console.log("clicked")
     const url = "http://localhost:8888/authorize"
 
     const options = {
@@ -20,8 +21,12 @@ export const Login = () => {
 
     axios(options)
       .then(data => {
+        console.log(data)
         console.log(data.data)
         window.location.replace(data.data)
+      })
+      .catch(err => {
+        console.log(err)
       })
   }
 

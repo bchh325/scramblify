@@ -4,6 +4,7 @@ import "./../styles/loginPage.css"
 import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import QueryString from 'qs'
+import Item from './Item'
 
 export default function Board() {
     const [playlists, setPlaylists] = useState(null)
@@ -23,7 +24,11 @@ export default function Board() {
         }
 
         axios(options)
-            .then(res => setPlaylists(res.data))
+            .then(res => {
+                setPlaylists(res.data)
+                console.log(res)
+            })
+            .catch(err => console.log(err))
     }
 
     console.log(playlists)
@@ -57,6 +62,7 @@ export default function Board() {
         if (options) {
             axios(options)
                 .then(data => {
+                    console.log("exchange done")
                     getPlaylists()
                 })
                 .catch(err => console.log(err))
@@ -82,11 +88,8 @@ export default function Board() {
                 <div className={`${styles.gridContainer} ${styles.child}`}>
                     {playlists && playlists.items.map((item, i) => {
                         console.log(item.images[0].url)
-
-                        return (
-                            <span>
-                                <img src={`${item.images[0].url}`}/>
-                            </span>)
+                        console.log(item)
+                        return (<Item info={item} image={`${item.images[0].url}`}/>)
                     })}
                 </div>
             </div>
