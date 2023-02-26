@@ -1,5 +1,6 @@
 import React from 'react'
 import "./../styles/loginPage.css" 
+import { Link } from 'react-router-dom'
 
 export const login = () => {
   return (
@@ -8,7 +9,7 @@ export const login = () => {
             <h1 class='login-title'>Scramblify</h1>
         </div>
         <div class='login-btn-div'>
-            <button class='login-btn'>Login with Spotify</button>
+            <button class='login-btn'><Link to="/home">Login with Spotify</Link></button>
             <p class='login-btn-caption'>This will redirect you to the Spotify Auth Page</p>
         </div>
     </div>

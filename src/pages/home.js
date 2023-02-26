@@ -1,11 +1,28 @@
 import React from 'react'
-
-const home = () => {
+import './../styles/Home.css'
+export const Home = () => {
   return (
     <div>
         <div class="home-game-starting-pg">
             <div class='home-title-div'>
-                <h1 class='home-title'>Scramblify</h1>
+                <h1 class='home-title'>
+                <div>
+                    <body>
+                        <h2>
+                            <span>Scramblify</span>
+                            <span>crabflimSy</span>
+                            <span>flyrimScab</span>
+                            <span>barfmicSly</span>
+                            <span>farmicylbS</span>
+                            <span>BaSclimbfry</span>
+                            <span>aSclimbfry</span>
+                            <span>calfmyribS</span>
+                            <span>barSflymic</span>
+                            <span>balmcryifS</span>
+                        </h2>  
+                    </body> 
+                </div>
+                </h1>
             </div>
             <div class='home-instructions-div'>
                 <div class="home-instruction-1">
@@ -29,4 +46,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
