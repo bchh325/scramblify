@@ -28,7 +28,7 @@ export const Home = () => {
                 </div>
             </div>
             <div class='home-start-btn-div'>
-                <span><Link to="/categories">Start Game</Link></span>
+                <button class="h-btn"><Link to="/categories">Start Game</Link></button>
             </div>
         </div>
     </div>

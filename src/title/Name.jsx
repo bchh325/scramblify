@@ -6,17 +6,17 @@ export default function Name() {
   return (
     <div>
       <body>
-        <h2>
-            <span>Scramblify</span>
-            <span>crabflimSy</span>
-            <span>flyrimScab</span>
-            <span>barfmicSly</span>
+        <h2 class="scr">
+            <span>Scramblify!</span>
+            <span>crabfli!mSy</span>
+            <span>flyr!imScab</span>
+            <span>barfmicSl!y</span>
             <span>farmicylbS</span>
-            <span>BaSclimbfry</span>
-            <span>aSclimbfry</span>
-            <span>calfmyribS</span>
-            <span>barSflymic</span>
-            <span>balmcryifS</span>
+            <span>B!aSclimbfry</span>
+            <span>aScl!imbfry</span>
+            <span>calfmyri!bS</span>
+            <span>b!arSflymic</span>
+            <span>!balmcryifS</span>
     </h2>  
     </body> 
     </div>
