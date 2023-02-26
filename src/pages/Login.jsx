@@ -16,8 +16,11 @@ export const login = () => {
               <Link to="/home">Login with Spotify</Link>
             </button>
             
+        </div >
+        <div class='info'>
+          <img src="https://www.pngall.com/wp-content/uploads/8/Warning-Sign-PNG.png"/>
+          <p class='login-btn-caption'>Spotify login required to access user's playlists. This will redirect you to the Spotify Authenticator Page.</p>
         </div>
-        <p class='login-btn-caption'>This will redirect you to the Spotify Auth Page</p>
     </div>
   )
 }
