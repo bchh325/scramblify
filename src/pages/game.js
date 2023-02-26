@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { CategoryContext } from '../context/CategoryContext'
 import { UserContext } from '../context/UserContext'
 import Scrambler from 'scrambling-text'
@@ -7,8 +7,11 @@ import { Link } from 'react-router-dom'
 const Game = () => {
     const {category, setCategory} = useContext(CategoryContext)
     const {user, setUser} = useContext(UserContext)
-    const {currentWord, setCurrentWord} = useContext();
+    const [currentWord, setCurrentWord] = useState();
+    const [wrongInput, setWrongInputFlag] = useState(false);
+    const [input, setInput] = useState('')
     const scrambler = new Scrambler()
+    const score = 0;
  
     useEffect(() => {
         let randomNum = (Math.random() * user.listOfPlaylist.body.tracks.items.length)
@@ -21,12 +24,26 @@ const Game = () => {
         } else {
             //
         }
-    })
+        generateScramWords()
+    }, [])
 
     const generateScramWords = () => {
         scrambler.scramble(currentWord)
     }
+
+    const checkWord = (input) => {
+        if (input == currentWord) {
+            setWrongInputFlag(() => wrongInput = false)
+            score += 100
+            generateScramWords()
+        } else {
+            setWrongInputFlag(() => wrongInput = true)
+        }
+    }
     
+    const handleEvent = (e) => {
+        setInput(e.target.value)
+    }
 
     return (
         <div class='game-pg'>
@@ -40,10 +57,10 @@ const Game = () => {
                 <p>{currentWord}</p>
             </div>
             <div class='fill-in-text-div'>
-                <input type='text'></input>
+                <input type='text' onChange={handleEvent}></input>
             </div>
             <div class='submit-hint-btn-div'>
-                <button class='submit-btn'>Submit!</button>
+                <button class='submit-btn' onClick={checkWord(input)}>Submit!</button>
                 <button class='hint-btn'>Hint?</button>
             </div>
         </div>
