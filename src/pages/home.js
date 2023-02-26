@@ -37,7 +37,10 @@ export const Home = () => {
                 </div>
             </div>
             <div class='home-start-btn-div'>
-                <span><Link to="/catagories">Start Game!</Link></span>
+                <a href='https://www.freepnglogos.com/uploads/spotify-logo-png/file-spotify-logo-png-4.png'/>
+                <span>
+                    <Link to="/catagories">Start Game!</Link>
+                </span>
             </div>
         </div>
         <div class='about us'>

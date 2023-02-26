@@ -15,10 +15,20 @@ button{
 }
 a {
     text-decoration: none;
-    color:rgb(88, 182, 79)
+    color:rgb(88, 182, 79);
 }
 a:hover{
     color: #376139;
+}
+.spot{
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    float: left;
+    display:inline;
+}
+.login-btn-div{
+    display:flex;
 }
 /* button:hover{
     border-color: #376139;
