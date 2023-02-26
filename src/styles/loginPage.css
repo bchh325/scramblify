@@ -2,4 +2,24 @@
     background-color: rgb(24, 25, 36);
     color: rgb(255, 253, 226);
     height: 100vh;
+    padding: 100px;
 }
+button{
+    background-color:  rgb(24, 25, 36);
+    color: rgb(255, 255, 255);
+    border: 2px solid #4CAF50;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 12px;
+    
+}
+a {
+    text-decoration: none;
+    color:rgb(88, 182, 79)
+}
+a:hover{
+    color: #376139;
+}
+/* button:hover{
+    border-color: #376139;
+} */

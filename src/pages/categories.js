@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const categories = () => {
+const Categories = () => {
   return (
     <div class='categories-div'>
         <div class='playlist-menu-div'>
@@ -13,17 +14,16 @@ const categories = () => {
         </div>
         <div class='categories-selection-div'>
             <div class='artist-name-category'>
-
+    
             </div>
             <div class='song-name-category'>
 
             </div>
             <div class='album-name-category'>
-
             </div>
         </div>
     </div>
   )
 }
 
-export default categories
+export default Categories

@@ -36,7 +36,7 @@ export const Home = () => {
                 </div>
             </div>
             <div class='home-start-btn-div'>
-                <button>Start Game!</button>
+                <button><Link to="/game">Start Game!</Link></button>
             </div>
         </div>
         <div class='about us'>
