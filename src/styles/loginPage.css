@@ -10,6 +10,7 @@ button{
     text-decoration: none;
     border-radius: 40px;
     padding: 2px;
+    margin:45px;
 }
 .name{
     position:relative;

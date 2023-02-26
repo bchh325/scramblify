@@ -2,11 +2,13 @@ import React from 'react'
 import './../styles/Home.css'
 import { Link } from 'react-router-dom'
 import Name from '../title/Name'
-
+import Nav from '../components/Nav'
 export const Home = () => {
   return (
     <div>
+        <Nav />
         <div class="home-game-starting-pg">
+            
             <div class='home-title-div'>
                 <h1 class='home-title'>
                 <div>
@@ -28,9 +30,6 @@ export const Home = () => {
             <div class='home-start-btn-div'>
                 <span><Link to="/categories">Start Game</Link></span>
             </div>
-        </div>
-        <div class='about us'>
-            
         </div>
     </div>
   )
