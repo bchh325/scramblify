@@ -25,7 +25,7 @@ const categories = () => {
   useEffect(() => {
     GetUserPlaylist(user.token)
     user[listOfPlaylist] = {listOfPlaylist}
-  })
+  }, [])
 
   return (
     <UserContext.Provider value={{ category, setCategory }}>
