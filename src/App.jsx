@@ -8,6 +8,7 @@ import Categories from './pages/Categories';
 import Playlists from './pages/Playlists';
 import Score from './pages/Score';
 import Board from './pages/Board';
+import Flex from './pages/Flex';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/playlists" element={<Playlists/>}/>
         <Route path="/score" element={<Score/>}/>
         <Route path="/test" element={<Board />}/>
+        <Route path="/flex" element={<Flex/>}/>
+
       </Routes>
     </div>
   );
