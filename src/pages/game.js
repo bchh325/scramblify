@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const game = () => {
   return (
     <div class='game-pg'>
@@ -10,7 +10,7 @@ const game = () => {
             <img alt='current song img'></img>
         </div>
         <div class='scrambled-word-div'>
-            <p>{scrambledTitle}</p>
+            {/* <p>{scrambledTitle}</p> */}
         </div>
         <div class='fill-in-text-div'>
             <input type='text'></input>
