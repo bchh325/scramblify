@@ -1,8 +1,9 @@
 import React from 'react'
+import "./../styles/loginPage.css" 
 
 const login = () => {
   return (
-    <div>
+    <div class='login-pg'>
         <div class='login-title-div'>
             <h1 class='login-title'>Scramblify</h1>
         </div>
