@@ -5,13 +5,43 @@ import axios from 'axios'
 import { useSearchParams } from 'react-router-dom'
 import QueryString from 'qs'
 import Item from './Item'
+import Track from './Track'
 
 export default function Board() {
     const [playlists, setPlaylists] = useState(null)
+    const [collapse, setCollapse] = useState(false)
+    const [tracks, setTracks] = useState(null)
+
+    const collapseHandler = () => {
+        collapse ? setCollapse(false) : setCollapse(true)
+    }
+
+    const getPlaylistTracks = (id) => {
+        console.log("tokens done")
+        const url = process.env.REACT_APP_HOST + "resources"
+
+        const options = {
+            method: 'post',
+            url: url,
+            withCredentials: true,
+            data: {
+                reqUrl: `https://api.spotify.com/v1/playlists/${id}/tracks`,
+                contType: "application/json"
+            }
+        }
+
+        axios(options)
+            .then(res => {
+                setTracks(res.data.items)
+                setPlaylists(null)
+                setCollapse(false)
+            })
+            .catch(err => console.log(err))
+    }
 
     const getPlaylists = () => {
         console.log("tokens done")
-        const url = "http://localhost:8888/resources"
+        const url = process.env.REACT_APP_HOST + "resources"
 
         const options = {
             method: 'post',
@@ -31,7 +61,6 @@ export default function Board() {
             .catch(err => console.log(err))
     }
 
-    console.log(playlists)
     useEffect(() => {
         console.log("reloaded")
         const myUrl = new URL(window.location.toLocaleString());
@@ -44,7 +73,7 @@ export default function Board() {
         console.log(params)
         if (params["?code"] && params.state) {
             console.log("exists")
-            const url = "http://localhost:8888/exchange"
+            const url = process.env.REACT_APP_HOST + "exchange"
             options = {
                 method: 'post',
                 url: url,
@@ -71,25 +100,23 @@ export default function Board() {
 
     }, [])
 
+    console.log(collapse)
     return (
         <div className={styles.container}>
             <div className={`${styles.navContainer} ${styles.child}`}>
                 <span>Songs</span>
                 <span>Artists</span>
-                <span>Album</span>
+                <span onClick={collapseHandler}>Album</span>
             </div>
             <div className={`${styles.gameContainer} ${styles.child}`}>
-                <div className={`${styles.flexContainer} ${styles.child}`}>
-                    <span>Text</span>
-                    <span>Text</span>
-                    <span>Text</span>
-                    <span>Text</span>
-                </div>
-                <div className={`${styles.gridContainer} ${styles.child}`}>
+
+                <div className={`${tracks == null ? styles.gridContainer : styles.trackContainer} ${styles.child}`}>
                     {playlists && playlists.items.map((item, i) => {
-                        console.log(item.images[0].url)
-                        console.log(item)
-                        return (<Item info={item} image={`${item.images[0].url}`}/>)
+                        return (<Item getTracks={getPlaylistTracks} collapseHandler={collapseHandler} collapse={collapse} info={item} image={`${item.images[0].url}`}/>)
+                    })}
+                    {tracks && tracks.map((item) => {
+                        console.log(item.track.name)
+                        return (<Track title={item.track.name}/>)
                     })}
                 </div>
             </div>

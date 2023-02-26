@@ -11,7 +11,7 @@ import QueryString from 'qs'
 export const Login = () => {
   const handleLogin = () => {
     console.log("clicked")
-    const url = "http://localhost:8888/authorize"
+    const url = process.env.REACT_APP_HOST + "authorize"
 
     const options = {
       method: 'get',

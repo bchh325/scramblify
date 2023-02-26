@@ -20,17 +20,36 @@
     max-height: 100vh;
 }
 
+.trackContainer {
+    box-sizing: border-box;
+    display: flex;
+    max-height: 100vh;
+}
+
 .gridContainer {
     padding: 40px;
     overflow: scroll;
     box-sizing: border-box;
-    height: 90vh;
+    height: 100vh;
     background-color: rgb(24, 25, 36);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     ;
     align-items: center;
     justify-items: center;
+    row-gap: 20px;
+    max-height: 100%;
+}
+
+.trackContainer {
+    padding: 40px;
+    overflow: scroll;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgb(24, 25, 36);
+    display: flex;
+    flex-direction: column
+    ;
     row-gap: 20px;
     max-height: 100%;
 }

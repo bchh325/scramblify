@@ -1,0 +1,62 @@
+.track {
+    background-color: whitesmoke;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 20px;
+    font-size: 25px;
+    border-radius: 2px;
+    animation: 0.1s in ease-out;
+    animation-fill-mode: forwards;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(13, 155, 0, 0.884) 0px -3px 0px inset;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.input {
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+}
+
+.correct {
+    pointer-events: none;
+    animation: 0.1s correct ease-out;
+    animation-fill-mode: forwards;
+    background-color: whitesmoke;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 20px;
+    font-size: 25px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(13, 155, 0, 0.884) 0px -3px 0px inset;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+@keyframes in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes correct {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.9);
+    }
+}
