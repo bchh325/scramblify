@@ -43,10 +43,10 @@ const categories = () => {
               <button onClick={setCategory(() => {category = "artist_name"})}>test</button>
           </div>
           <div class='song-name-category'>
-            <button onClick={setCategory(() => {category = "artist_name"})}>test</button>
+            <button onClick={setCategory(() => {category = "song_name"})}>test</button>
           </div>
           <div class='album-name-category'>
-            <button onClick={setCategory(() => {category = "artist_name"})}>test</button>
+            <button onClick={setCategory(() => {category = "album_name"})}>test</button>
           </div>
         </div>
       </div>
