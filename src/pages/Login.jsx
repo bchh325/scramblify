@@ -7,7 +7,9 @@ import Nav from '../components/Nav'
 export const Login = () => {
   return (
     <div class='login-pg'>
+        <div class="name">
         <Nav />
+        </div>
         <div class='login-title-div'>
             {/* <h1 class='login-title'>Scramblify</h1> */}
             <Name />
