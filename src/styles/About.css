@@ -8,12 +8,24 @@
     padding: 10px;
     grid-template-rows: 1fr 10fr;
 }
-.x{
+.x p{
     font-family: 'Tilt Warp', cursive;
-    padding: 20px;
-    font-size: 30px;
+    padding: 30px;
+    font-size: 45px;
     color: antiquewhite;
 
+}
+.x span{
+    position:absolute;
+    right:80px;
+    top: 80px;
+    font-size: 30px;
+}
+.x span:hover{
+    color:rgb(136, 207, 127);
+    border-bottom: solid 3px;
+    border-color: rgb(136, 207, 127);
+    border-radius: 3px;
 }
 .y{
     background-color: rgb(24, 25, 36); 
@@ -22,10 +34,13 @@
     padding: 10px;
     grid-template-columns: 1fr 1fr;
 }
-.z{
+.z h1{
+
+    color: antiquewhite;
+    font-size: 20px;
 }
 .z img{
-    padding: 30px;
+    padding: 10px;
     border-radius: 50%;
     width:100px;
     height:100px;

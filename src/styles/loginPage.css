@@ -40,7 +40,7 @@
     display:flex;
     justify-content: center;
 }
-p{
+.login-btn-caption{
     padding: 20px;
     font-family: 'Prompt', sans-serif;
     position:relative;

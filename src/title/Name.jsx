@@ -6,7 +6,7 @@ export default function Name() {
   return (
     <div>
       <body>
-        <h2>
+        <h2 class="scr">
             <span>Scramblify</span>
             <span>crabflimSy</span>
             <span>flyrimScab</span>
