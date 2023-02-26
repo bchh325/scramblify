@@ -35,9 +35,14 @@
     grid-template-columns: 1fr 1fr;
 }
 .z h1{
-
+    font-family: 'Prompt', sans-serif;
     color: antiquewhite;
     font-size: 20px;
+}
+.z p{
+    font-family: 'Prompt', sans-serif;
+    color: rgb(194, 183, 170);
+    font-size: 17px;
 }
 .z img{
     padding: 10px;
