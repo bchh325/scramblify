@@ -21,6 +21,7 @@
 }
 
 .gridContainer {
+    padding-top: 20px;
     overflow: scroll;
     box-sizing: border-box;
     height: 90vh;

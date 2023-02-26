@@ -10,7 +10,7 @@ export default function Board() {
 
     const getPlaylists = () => {
         console.log("tokens done")
-        const url = "http://localhost:8888/resources"
+        const url = "https://scram-back.wl.r.appspot.com/resources"
 
         const options = {
             method: 'post',
@@ -23,7 +23,11 @@ export default function Board() {
         }
 
         axios(options)
-            .then(res => setPlaylists(res.data))
+            .then(res => {
+                setPlaylists(res.data)
+                console.log(res)
+            })
+            .catch(err => console.log(err))
     }
 
     console.log(playlists)
@@ -39,7 +43,7 @@ export default function Board() {
         console.log(params)
         if (params["?code"] && params.state) {
             console.log("exists")
-            const url = "http://localhost:8888/exchange"
+            const url = "https://scram-back.wl.r.appspot.com/exchange"
             options = {
                 method: 'post',
                 url: url,
@@ -57,6 +61,7 @@ export default function Board() {
         if (options) {
             axios(options)
                 .then(data => {
+                    console.log("exchange done")
                     getPlaylists()
                 })
                 .catch(err => console.log(err))
