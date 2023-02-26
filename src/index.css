@@ -10,10 +10,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   font-family: 'Tilt Warp', cursive;
-  height: 50vh;
+  /* height: 50vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   
 }
 h2{
@@ -33,14 +33,13 @@ h2 span{
   align-items: center;
   font-size: 50px;
   
-  animation: shuffle steps(10) 1.5s infinite ;
-  animation-delay: 1s;
-  animation-iteration-count: 2;
+  animation: shuffle steps(10) 1s infinite ;
+  animation-delay: 0.7s;
+  animation-iteration-count: 3;
 }
 
 h2:hover span{
-  animation: shuffle steps(10) 1.5s infinite ;
-  animation-delay: 0.5s;
+  animation: shuffle steps(10) 1s infinite ;
 }
 @keyframes shuffle{
   0%{
