@@ -1,5 +1,16 @@
+
+
 .login-pg {
     background-color: #0f121c;
     color: whitesmoke;
     height: 100vh;
+}
+
+.login-title {
+    font-size: 64px;
+    font-family: 'Pacifico', cursive;
+}
+
+button {
+    padding: 0px,
 }
