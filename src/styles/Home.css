@@ -49,9 +49,3 @@ h2:hover span{
     transform: translateY(-1000px);
   }
 }
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
